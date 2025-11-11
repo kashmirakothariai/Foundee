@@ -3,6 +3,7 @@ services:
   - type: web
     name: foundee-backend
     env: python
+    plan: free
     region: oregon
     buildCommand: "pip install -r backend/requirements.txt"
     startCommand: "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
@@ -54,5 +55,6 @@ databases:
   - name: foundee-db
     databaseName: foundee
     user: foundee_user
+    plan: free
     region: oregon
 
