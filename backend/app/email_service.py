@@ -9,8 +9,9 @@ class EmailService:
     def __init__(self):
         self.smtp_host = settings.SMTP_HOST
         self.smtp_port = settings.SMTP_PORT
-        self.smtp_user = settings.SMTP_USER
+        self.smtp_user = settings.SMTP_USERNAME
         self.smtp_password = settings.SMTP_PASSWORD
+        self.email_from = settings.EMAIL_FROM
         email_logger.info("Email service initialized")
     
     def send_location_alert(
@@ -54,7 +55,7 @@ class EmailService:
             email_logger.info(f"Connecting to SMTP server: {self.smtp_host}:{self.smtp_port}")
             
             msg = MIMEMultipart()
-            msg['From'] = self.smtp_user
+            msg['From'] = self.email_from
             msg['To'] = to_email
             msg['Subject'] = subject
             
