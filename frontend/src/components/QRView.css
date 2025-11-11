@@ -1,0 +1,104 @@
+.unbound-card {
+  text-align: center;
+  padding: 60px 30px;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border: 2px dashed #667eea;
+}
+
+.unbound-card h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 32px;
+}
+
+.unbound-card p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.unbound-card .info-text {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.unbound-card .small-text {
+  font-size: 14px;
+  color: #999;
+  margin-top: 15px;
+}
+
+.contact-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-card h2 {
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-subtitle {
+  text-align: center;
+  color: #667eea;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.contact-details {
+  background: #f8f9ff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.detail-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e7ff;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #666;
+}
+
+.detail-value {
+  color: #333;
+}
+
+.detail-value a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.detail-value a:hover {
+  text-decoration: underline;
+}
+
+.alert-info {
+  background: #e0f2fe;
+  border-left: 4px solid #0ea5e9;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.alert-info p {
+  margin: 0;
+  color: #0369a1;
+}
+
